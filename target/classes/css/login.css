@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+.loginform {
+	background:#BFC9CA;
+	height: 200px;
+	width:320px;
+	margin:auto;
+	padding :15px 15px 5px 15px;
+	
+}
+
+.loginform ul{
+	list-style:none;
+}
+
+#my_centered_button  {
+margin-top:10px;
+}
+
+#forgot_password {
+	font-size: small;
+}

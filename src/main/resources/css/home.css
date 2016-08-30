@@ -1,0 +1,115 @@
+@CHARSET "ISO-8859-1";
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: #FFFBEC ;
+}
+
+
+header {
+  padding: 20px 0 20px 0;
+}
+
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+header #header1{
+	display: flex;
+	background-color:#15D5DB;
+	background-size: 100% 100%;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+  padding:0 0 15px 0;
+  font-family:"Comic Sans MS", cursive, sans-serif
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 15px 0;
+   font-size:18px;
+}
+
+header navusr{
+	display: flex;
+  justify-content: flex-end;
+  padding: 0 0 15px 0;
+   font-size:18px;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+#pageCarousel {
+	background-image: url("http://data.whicdn.com/images/61964208/large.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	height:20%;
+	}
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 20%;
+      margin: auto;
+   
+       
+    
+  }
+  .carousel-inner>.item>img {
+    width: 20%;
+    height: 20%;
+     border-radius: 100%;
+  }
+
+   .carousel-inner > .item > .carousel-caption >h2{
+      	color:#33E0FF;
+     	font-weight: 800;
+     	text-align:left;
+     	 text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+     	   	
+     
+   }
+   
+
+section{
+	padding-top: 20px;
+	margin:auto;
+	 justify-content: flex-start;
+	 font-size:18px;
+
+	
+}
+section h3{
+	text-align:center;
+	color: #933156
+}
+
+footer {
+  padding-top:20px;
+   font-size: 12px;
+   bottom:0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
