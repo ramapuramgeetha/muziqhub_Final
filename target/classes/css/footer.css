@@ -1,0 +1,19 @@
+
+body{
+	background-color:#CADEDE
+}
+
+footer {
+  padding-top:20px;
+   font-size: 12px;
+   bottom:0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer   #socialmedia {
+  list-style: none;
+}

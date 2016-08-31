@@ -11,10 +11,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
-   <base href="resources/" target="_blank">    
+
        
- <link rel="stylesheet" type="text/css" href="resources/home.css"  media ="screen"/>
- <link rel="stylesheet" type="text/css" href="/resources/Carousel.css"  media ="screen"/>
+ <link rel="stylesheet" type="text/css" href="home.css"  media ="screen"/>
+ <link rel="stylesheet" type="text/css" href="Carousel.css"  media ="screen"/>
  
 </head>
 <body>
@@ -35,25 +35,25 @@
 	
 			<div class ="item active">
 								<img  src="
-https://thumbs.dreamstime.com/x/grunge-music-instrument-background-16382653.jpg" alt ="String Instruments" class="img-responsive">
-				    			<div class="carousel-caption" >
-							<h2 > String</h2>
-							<h2 >  Instruments </h2>
+http://digitalpianoguys.com/wp-content/uploads/2013/09/81-hT3KUrDL._SL1500_.jpg" alt ="Yamaha Keyboard" class="img-responsive">
+				    <div class="carousel-caption" >
+							<h2 > 20% Off </h2>
+							<h2 >  Yamaha Keyboards </h2>
 					</div>
 			</div>
 			
 			<div class ="item ">
 					<img src="
-https://thumbs.dreamstime.com/x/grunge-music-instrument-background-14214837.jpg" alt ="Wind Instruments" class="img-responsive">
+https://dncache-mauganscorp.netdna-ssl.com/thumbseg/1520/1520364-bigthumbnail.jpg" alt ="Wind Instruments" class="img-responsive">
 					<div class="carousel-caption">
-							<h2> Wind</h2>
-							<h2>  Instruments </h2>
+							<h2> Jazz with our </h2>
+							<h2>  Cool Sax</h2>
 					</div>
 			</div>
 			
 			<div class ="item ">
 					<img src="
-https://thumbs.dreamstime.com/x/grunge-music-instrument-background-14214782.jpg" alt ="KeyBoard Instruments" class="img-responsive">
+http://digitalpianoguys.com/wp-content/uploads/2013/09/81-hT3KUrDL._SL1500_.jpg" alt ="KeyBoard Instruments" class="img-responsive">
 				<div class="carousel-caption caption-shadow">
 							<h2> KeyBoard</h2>
 							<h2>Instruments </h2>
@@ -63,15 +63,15 @@ https://thumbs.dreamstime.com/x/grunge-music-instrument-background-14214782.jpg"
 	
 			<div class ="item ">
 					<img src="
-https://thumbs.dreamstime.com/x/grunge-music-instrument-background-16382465.jpg" alt ="Percussion Instruments" class="img-responsive">
+http://www.drummagazine.com/images/gear/041013-vistalite-tivoli.jpg" alt ="Percussion Instruments" class="img-responsive">
 				<div class="carousel-caption caption-shadow">
-							<h2> Percussion</h2>
-							<h2>Instruments </h2>
+							<h2> New in</h2>
+							<h2>Drumsets </h2>
 					</div>
 			</div>
 			<div class ="item ">
 					<img src="
-https://thumbs.dreamstime.com/x/musick-grunge-3883901.jpg" alt ="Accessories" class="img-responsive">
+http://digitalpianoguys.com/wp-content/uploads/2013/09/81-hT3KUrDL._SL1500_.jpg" alt ="Accessories" class="img-responsive">
 				<div class="carousel-caption caption-shadow">
 							<h2> Accessories</h2>
 					</div>

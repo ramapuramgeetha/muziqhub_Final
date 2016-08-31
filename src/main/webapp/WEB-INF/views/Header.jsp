@@ -10,9 +10,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
- <base href="../resources/css" target="_blank">         
+      
        
- <link rel="stylesheet" type="text/css" href="home.css"  media ="screen"/>
+ <link rel="stylesheet" type="text/css" href="header.css"  media ="screen"/>
 </head>
 <body>
 <!--  The Header section with the navigation menu -->
@@ -22,16 +22,23 @@
 		<h1 class = "col-sm-8>">Muziq Hub</h1>
 	</div>
 	<div id="header2" class="row">
-			<nav class="col-sm-8">
-				<p><a href ="Home.jsp"> Home </a></p>
+			<nav class="col-sm-5">
+				<p><a href ="index.jsp"> Home </a></p>
 				<p><a href ="Products.jsp"> Products </a></p>
 				<p> <a href ="About.jsp">About Us </a></p>
 				<p> <a href ="ContactUs.jsp">Contact Us </a></p>
 				</nav>	
-				<navusr class ="col-sm-8">
+				<navusr class ="col-sm-4">
 						<p><a href ="Register.jsp"> Register </a></p>
 						<p><a href ="Login.jsp"> Login </a></p>
-					</nav>
+					</navusr>
+					<navmedia class="col-sm-3">
+					<ul>
+  						<li class="col-sm-1"><img src="https://cdn2.iconfinder.com/data/icons/social-18/512/Twitter-2-32.png"></li>
+  						<li class="col-sm-1"><img src="https://cdn2.iconfinder.com/data/icons/social-18/512/Facebook-2-32.png"></li>
+  						<li class="col-sm-1"><img src="https://cdn2.iconfinder.com/data/icons/social-18/512/Instagram-2-32.png"> </li>
+					</ul>
+					</navmedia>
 	</div>
 </header>
 </body>

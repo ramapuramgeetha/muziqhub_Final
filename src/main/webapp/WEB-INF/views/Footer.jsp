@@ -11,9 +11,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  
-      <base href="../resources/" target="_blank">
-               
- <link rel="stylesheet" type="text/css" href="home.css"  media ="screen"/>
+
+ <link rel="stylesheet" type="text/css" href="footer.css"  media ="screen"/>
  
 </head>
 <body>
@@ -22,9 +21,14 @@
 <!-- The footer -->
   <footer class=" container">
     <div class="row">
-      <p class="col-sm-4">&copy; 2016 DTbatch 5</p>
-       <p class="col-sm-4">Privacy</p>
-        <p class="col-sm-4">Terms and Conditions</p>
+      <p class="col-sm-3">&copy; 2016 DTbatch 5</p>
+       <p class="col-sm-3">Privacy</p>
+        <p class="col-sm-3">Terms and Conditions</p>
+        <ul id ="socialmedia" class="col-sm-3">
+  					<li class="col-sm-1"><img src="https://cdn2.iconfinder.com/data/icons/social-18/512/Twitter-2-32.png"></li>
+  					<li class="col-sm-1"><img src="https://cdn2.iconfinder.com/data/icons/social-18/512/Facebook-2-32.png"></li>
+  					<li class="col-sm-1"><img src="https://cdn2.iconfinder.com/data/icons/social-18/512/Instagram-2-32.png"> </li>
+		</ul>
      </div>
   </footer>
 
