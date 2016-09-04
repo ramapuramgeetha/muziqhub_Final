@@ -1,14 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.musicrecords</groupId>
-  <artifactId>muziqhub</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>muziqhub Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  			<groupId>com.musicrecords</groupId>
+  			<artifactId>muziqhub</artifactId>
+ 			 <packaging>war</packaging>
+  			<version>0.0.1-SNAPSHOT</version>
+  			<name>muziqhub Maven Webapp</name>
+  			<url>http://maven.apache.org</url>
+
 <properties>
-<org.springframework.version>4.1.0.RELEASE</org.springframework.version>
+			<org.springframework.version>4.1.0.RELEASE</org.springframework.version>
 </properties>
 
   <dependencies>
@@ -40,6 +41,16 @@
     <artifactId>spring-web</artifactId>
     <version>4.1.0.RELEASE</version>
 </dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>4.1.0.RELEASE</version>
+</dependency>
+
+
 
 <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
 <dependency>
