@@ -23,10 +23,10 @@
 	</div>
 	<div id="header2" class="row">
 			<nav class="col-sm-5">
-				<p><a href ="index.jsp"> Home </a></p>
-				<p><a href ="Products.jsp"> Products </a></p>
-				<p> <a href ="About.jsp">About Us </a></p>
-				<p> <a href ="ContactUs.jsp">Contact Us </a></p>
+				<p><a href ="index"> Home </a></p>
+				<p><a href ="Products"> Products </a></p>
+				<p> <a href ="About">About Us </a></p>
+				<p> <a href ="ContactUs">Contact Us </a></p>
 				</nav>	
 				<navusr class ="col-sm-4">
 						<p><a href ="Register.jsp"> Register </a></p>
