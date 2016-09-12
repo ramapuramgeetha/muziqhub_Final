@@ -59,6 +59,19 @@
     <version>4.1.0.RELEASE</version>
 </dependency>
 
+<!--  jstl dependencies  -->
+
+<dependency>
+    <groupId>javax.servlet.jsp.jstl</groupId>
+    <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+    <version>1.2.1</version>
+</dependency>
+
+<dependency>
+    <groupId>org.glassfish.web</groupId>
+    <artifactId>javax.servlet.jsp.jstl</artifactId>
+    <version>1.2.1</version>
+</dependency>
 
     
   </dependencies>

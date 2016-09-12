@@ -1,3 +1,5 @@
+ <%@ page isELIgnored="false" %>
+ <%@ taglib prefix ="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -13,8 +15,8 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
     
- <link rel="stylesheet" type="text/css" href="home.css"  media ="screen"/>
- <link rel="stylesheet" type="text/css" href="HomeContent.css"  media ="screen"/>
+ <link rel="stylesheet" type="text/css" href="<c:url value="resources/css/home.css"/>"  media ="screen"/>
+ <link rel="stylesheet" type="text/css" href="<c:url value="resources/css/HomeContent.css"/>"  media ="screen"/>
 
 
 
@@ -28,8 +30,7 @@
 <%@include file="Header.jsp" %>
 
 
-<!--  the carousel section -->
-<%@include file="Carousel.jsp" %>
+<%@include file="carousel.jsp"%>
 
 
 
@@ -37,10 +38,9 @@
 <!--  Content section with the content: to be done -->
 <section class= "container">
  <div class = "contents">	
- 				<a href ="Login.jsp">
- 					<img src="http://classicandcoolguitars.co.uk/wp-content/uploads/2015/11/mosaic_guitar_18x12-400x600.jpg" class="image-responsive">
- 					<p>Stringed Instruments</p>
- 				</a> 
+ 				<img src="<c:url value="resources/images/mosaic_guitar_18x12-400x600.jpg"/>" class="image-responsive">
+ 					<p>String Instruments</p>
+ 				
  	</div>
 	 <div class = "contents">
 	 		<img src="https://dncache-mauganscorp.netdna-ssl.com/thumbseg/1520/1520364-bigthumbnail.jpg"  class="image-responsive">
@@ -55,7 +55,7 @@
 	 		<p> Percussion Instruments </p>
 	 	</div>
 	 <div class = "contents">
-	 		<img src="http://avtomelody.ru/image/data/journal2/SOL-REPUBLIC-deadmau5-Tracks-HD_c.jpg"  class="image-responsive">
+	 		<img src="<c:url value="resources/images/headphones.jpg"/>"  class="image-responsive">
 	 		<p> Music Accessories </p>
 	 	</div>
 </section>

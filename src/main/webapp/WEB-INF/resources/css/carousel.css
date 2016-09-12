@@ -1,11 +1,8 @@
 @CHARSET "ISO-8859-1";
 
-body{
-	background-color:#CADEDE
-}
+
 
 #pageCarousel {
-	background-image: url("http://data.whicdn.com/images/61964208/large.jpg");
 	height:250px;
 	}
 
@@ -18,6 +15,7 @@ body{
 
 
    .carousel-inner > .item > .carousel-caption >h2{
+  		font-family:"Comic Sans MS", cursive, sans-serif;
       	color:#26D6FF;
      	font-weight: 900;
      	text-align:center;

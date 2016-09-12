@@ -14,6 +14,6 @@ footer .col-sm-8 {
   justify-content: flex-end;
 }
 
-footer   #socialmedia {
-  list-style: none;
+footer .row ul {
+	list-style:none;
 }

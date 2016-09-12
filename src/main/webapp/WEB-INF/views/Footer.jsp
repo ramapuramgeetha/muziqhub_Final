@@ -24,10 +24,10 @@
       <p class="col-sm-3">&copy; 2016 DTbatch 5</p>
        <p class="col-sm-3">Privacy</p>
         <p class="col-sm-3">Terms and Conditions</p>
-        <ul id ="socialmedia" class="col-sm-3">
-  					<li class="col-sm-1"><img src="https://cdn2.iconfinder.com/data/icons/social-18/512/Twitter-2-32.png"></li>
-  					<li class="col-sm-1"><img src="https://cdn2.iconfinder.com/data/icons/social-18/512/Facebook-2-32.png"></li>
-  					<li class="col-sm-1"><img src="https://cdn2.iconfinder.com/data/icons/social-18/512/Instagram-2-32.png"> </li>
+        <ul class="col-sm-3">
+  				<li class="col-sm-1"><a href="https://twitter.com/"><img src="<c:url value="/resources/images/Twitter-2-32.png"/>"></a></li>
+  				<li class="col-sm-1"><a href="https://www.facebook.com/"><img src="<c:url value="/resources/images/Facebook-2-32.png"/>"></a></li>
+  				<li class="col-sm-1"><a href="https://www.instagram.com/"><img src="<c:url value="/resources/images/Instagram-2-32.png"/>"> </a></li>
 		</ul>
      </div>
   </footer>

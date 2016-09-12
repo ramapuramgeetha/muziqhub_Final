@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomePageController {
 
 	@RequestMapping ("/")
-	public String HomePageController() {
+	public String HomePageControl() {
 		return "index";
 		
 	}
@@ -17,21 +17,21 @@ public class HomePageController {
 		return "index";
 	}
 	
-	@RequestMapping ("/About")
+	@RequestMapping ("/about")
 	public String AboutPage() {
-		return "About";
+		return "about";
 	}
-	@RequestMapping ("Login")
+	@RequestMapping ("signIn")
 	public String LoginPage() {
-		return "Login";
+		return "signIn";
 	}
 	
 	@RequestMapping ("Products")
 	public String ProductsPage() {
 		return "Products";
 	}
-	@RequestMapping ("Register")
-	public String RegisterPage() {
-		return "index";
+	@RequestMapping ("signUp")
+	public String signUp() {
+		return "signUp";
 	}
 }

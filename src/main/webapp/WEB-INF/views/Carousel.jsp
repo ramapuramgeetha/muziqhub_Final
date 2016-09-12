@@ -13,8 +13,8 @@
   
 
        
- <link rel="stylesheet" type="text/css" href="home.css"  media ="screen"/>
- <link rel="stylesheet" type="text/css" href="Carousel.css"  media ="screen"/>
+ 
+ <link rel="stylesheet" type="text/css" href="<c:url value="resources/css/carousel.css"/>"  media ="screen"/>
  
 </head>
 <body>
@@ -34,8 +34,7 @@
 	<div class ="carousel-inner">
 	
 			<div class ="item active">
-								<img  src="
-http://digitalpianoguys.com/wp-content/uploads/2013/09/81-hT3KUrDL._SL1500_.jpg" alt ="Yamaha Keyboard" class="img-responsive">
+								<img  src="<c:url value="resources/images/keyboard.jpg"/>" alt ="Yamaha Keyboard" class="img-responsive">
 				    <div class="carousel-caption" >
 							<h2 > 20% Off </h2>
 							<h2 >  Yamaha Keyboards </h2>
@@ -43,8 +42,7 @@ http://digitalpianoguys.com/wp-content/uploads/2013/09/81-hT3KUrDL._SL1500_.jpg"
 			</div>
 			
 			<div class ="item ">
-					<img src="
-https://dncache-mauganscorp.netdna-ssl.com/thumbseg/1520/1520364-bigthumbnail.jpg" alt ="Wind Instruments" class="img-responsive">
+					<img src="<c:url value="resources/images/1520364-sax.jpg"/>" alt ="Sax" class="img-responsive">
 					<div class="carousel-caption">
 							<h2> Jazz with our </h2>
 							<h2>  Cool Sax</h2>
@@ -52,8 +50,7 @@ https://dncache-mauganscorp.netdna-ssl.com/thumbseg/1520/1520364-bigthumbnail.jp
 			</div>
 			
 			<div class ="item ">
-					<img src="
-http://digitalpianoguys.com/wp-content/uploads/2013/09/81-hT3KUrDL._SL1500_.jpg" alt ="KeyBoard Instruments" class="img-responsive">
+					<img src="<c:url value="resources/images/keyboard.jpg"/>" alt ="KeyBoard Instruments" class="img-responsive">
 				<div class="carousel-caption caption-shadow">
 							<h2> KeyBoard</h2>
 							<h2>Instruments </h2>
@@ -62,18 +59,17 @@ http://digitalpianoguys.com/wp-content/uploads/2013/09/81-hT3KUrDL._SL1500_.jpg"
 			
 	
 			<div class ="item ">
-					<img src="
-http://www.drummagazine.com/images/gear/041013-vistalite-tivoli.jpg" alt ="Percussion Instruments" class="img-responsive">
+					<img src="<c:url value="resources/images/drums2.jpg"/>" alt ="Drums" class="img-responsive">
 				<div class="carousel-caption caption-shadow">
 							<h2> New in</h2>
 							<h2>Drumsets </h2>
 					</div>
 			</div>
 			<div class ="item ">
-					<img src="
-http://digitalpianoguys.com/wp-content/uploads/2013/09/81-hT3KUrDL._SL1500_.jpg" alt ="Accessories" class="img-responsive">
+					<img src="<c:url value="resources/images/guitarpicknecklace.jpg"/>" alt ="Accessories" class="img-responsive">
 				<div class="carousel-caption caption-shadow">
-							<h2> Accessories</h2>
+							<h2> Cool Accessories</h2>
+							<h2> Available Now</h2>
 					</div>
 			</div>
 			

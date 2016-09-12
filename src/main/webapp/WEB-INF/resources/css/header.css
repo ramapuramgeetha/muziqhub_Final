@@ -4,9 +4,7 @@ body{
 	background-color:#CADEDE
 }
 
-header {
-  padding: 20px 0 20px 0;
-}
+
 
 
 header .row,
@@ -19,13 +17,17 @@ header #header1{
 	display: flex;
 	background-color:#26D6FF;
 	background-size: 100% 100%;
+	 height: 100px !important;
 }
+
+header #header1 #logo{
+margin:auto;
+}
+
 
 header h1 {
   font-weight: 700;
   margin: 0;
-  padding:0 0 15px 0;
-  font-family:"Comic Sans MS", cursive, sans-serif;
   color: #FF1419;
 }
 
@@ -36,7 +38,19 @@ header navusr p a {
    font-family:"Comic Sans MS", cursive, sans-serif;
    text-decoration:none;
 }
-
+header nav .dropdown-toggle {
+	font-size:18px;
+   color: #0D93B2;
+   font-family:"Comic Sans MS", cursive, sans-serif;
+   text-decoration:none;
+}
+header nav .dropdown-toggle ul li a{
+	font-size:10px;
+	color:#0D93B2;
+	 font-family:"Comic Sans MS", cursive, sans-serif;
+   text-decoration:none;
+	
+}
 header nav {
   display: flex;
   justify-content: flex-start;
