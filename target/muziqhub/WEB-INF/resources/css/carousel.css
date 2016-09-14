@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+
+
+
+#pageCarousel {
+	height:250px;
+	}
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      min-width: 100%;
+    height: 250px !important;
+    
+  }
+
+
+   .carousel-inner > .item > .carousel-caption >h2{
+  		font-family:"Comic Sans MS", cursive, sans-serif;
+      	color:#26D6FF;
+     	font-weight: 900;
+     	text-align:center;
+     	 text-shadow:
+    -1px -1px 0 #0D93B2,
+    1px -1px 0 #0D93B2,
+    -1px 1px 0 #0D93B2,
+    1px 1px 0 #0D93B2;
+     	   	
+     
+   }
