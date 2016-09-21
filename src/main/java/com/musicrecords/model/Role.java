@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class Role {
 	@Id
 	private String userName;
 	private String userPassword;
@@ -61,7 +61,7 @@ public class User {
 
 
 
-	public User() {
+	public Role() {
 		// TODO Auto-generated constructor stub
 	}
 

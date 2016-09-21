@@ -28,7 +28,7 @@
 
 
 <!--  the header section -->
-<%@include file="Header.jsp" %>
+<%@include file="header.jsp" %>
 
 
 
@@ -57,7 +57,7 @@
 
 
 <!--   the footer section -->
-<%@include file="Footer.jsp" %>
+<%@include file="footer.jsp" %>
   
   
 </body>

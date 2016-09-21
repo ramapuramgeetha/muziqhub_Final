@@ -9,9 +9,18 @@ import javax.persistence.*;
 	int prodNo;
 	@Id
 	private String prodID;
-	private String prodCategory;
 	private String prodName;
+	private String prodCategory;
+	private String prodDesc;
+	private String prodColor;
+	private String prodSize;
+	private String prUOM;
+	private long prodStock;
+	private int prodReorder;
+	private String vendorID;
 	private Double prodPrice;
+	private String imageMap;
+	private String prodStatus;
 	
 	public String getImageMap() {
 		return imageMap;
@@ -28,16 +37,13 @@ import javax.persistence.*;
 	public void setProdStatus(String prodStatus) {
 		this.prodStatus = prodStatus;
 	}
-
-	private String imageMap;
-	private String prodStatus;
 	   
 public String getProdID() {
 		return prodID;
 	}
 
-	public void setProdID(String prodNo) {
-		this.prodID = "PR"+prodID;
+	public void setProdID(int prodNo) {
+		this.prodID = "PR"+Integer.toString(prodNo);
 	}
 
 	public String getProdName() {
@@ -52,6 +58,62 @@ public String getProdID() {
 		return prodCategory;
 	}
 
+	public String getProdDesc() {
+		return prodDesc;
+	}
+
+	public void setProdDesc(String prodDesc) {
+		this.prodDesc = prodDesc;
+	}
+
+	public String getProdColor() {
+		return prodColor;
+	}
+
+	public void setProdColor(String prodColor) {
+		this.prodColor = prodColor;
+	}
+
+	public String getProdSize() {
+		return prodSize;
+	}
+
+	public void setProdSize(String prodSize) {
+		this.prodSize = prodSize;
+	}
+
+	public String getPrUOM() {
+		return prUOM;
+	}
+
+	public void setPrUOM(String prUOM) {
+		this.prUOM = prUOM;
+	}
+
+	public long getProdStock() {
+		return prodStock;
+	}
+
+	public void setProdStock(long prodStock) {
+		this.prodStock = prodStock;
+	}
+
+	public int getProdReorder() {
+		return prodReorder;
+	}
+
+	public void setProdReorder(int prodReorder) {
+		this.prodReorder = prodReorder;
+	}
+
+	public String getVendorID() {
+		return vendorID;
+	}
+
+	public void setVendorID(String vendorID) {
+		this.vendorID = vendorID;
+	}
+
 	public void setProdCategory(String prodCategory) {
 		this.prodCategory = prodCategory;
 	}
@@ -63,14 +125,6 @@ public String getProdID() {
 	public void setProdPrice(Double prodPrice) {
 		this.prodPrice = prodPrice;
 	}
-
-		public Product(String id, String category, String name, Double price) {
-			this.setProdID(id);
-			this.setProdCategory(category);
-			this.setProdName(name);
-			this.setProdPrice(price);
-		}
-
 	}
 
 

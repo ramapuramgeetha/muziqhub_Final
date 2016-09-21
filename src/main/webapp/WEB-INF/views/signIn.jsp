@@ -27,7 +27,7 @@
 
 
 <!--  the header section -->
-<%@include file="Header.jsp" %>
+<%@include file="header.jsp" %>
 
 
 
@@ -49,12 +49,13 @@
 				<td> <input type="password" name="passWrd"/> </td>
 			</tr>
 			<tr>
-				<td> Type  : </td>
-				<td> <select> 
-							<option value="Admin">Administrator</option>
-  							<option value="Cust">Customer</option>
-  							</select> 
-  				</td>
+				<td><a href ="productDetails">Product details</a></td>
+			</tr>
+			<tr>
+				<td><a href ="category">Category details</a></td>
+			</tr>
+						<tr>
+				<td><a href ="vendor">vendor details</a></td>
 			</tr>
 			</table>
 
@@ -66,7 +67,7 @@
 </section>
 
 <!--   the footer section -->
-<%@include file="Footer.jsp" %>
+<%@include file="footer.jsp" %>
   
 </body>
 

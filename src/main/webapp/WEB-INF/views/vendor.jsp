@@ -23,64 +23,49 @@
 <!--  the header section -->
 <%@include file="header.jsp" %>
 
-<!-- The registration form -->
+<!-- The product entry  form -->
 <div class="form">
-<p> Thanks for deciding to Sign-up with Muziq Hub. 
-We need a few details to make your experience with us a pleasant one</p>
-<form name ="signin" action ="Login" method="post">
-<h2>Your Details</h2>
+<p> Please enter the details of the product you wish to add/update </p>
+<form name ="vendDetails" action ="Login" method="post">
+<h2>Vendor Details</h2>
 <table class="userdata">
 	<tr>
-		<td> User Name <span id="imp">*</span> : </td>
-		<td> <input type="text" name="uname"/> </td>
+		<td> Vendor Id : </td>
+		<td> <input type="text" name="vendId"/> </td>
 	</tr>
 	<tr>
-		<td> Password <span id="imp">*</span> : </td>
-		<td> <input type="password" name="passWrd"/> </td>
-	</tr>
-	<tr>
-		<td> Confirm Password <span id="imp">*</span> : </td>
-		<td> <input type="password" name="cfrmPass"/> </td>
-	</tr>
-	<tr>
-		<td> First Name <span id="imp">*</span> : </td>
-		<td> <input type="text" name="fName"/> </td>
-	</tr>
-	<tr>
-		<td> Last Name <span id="imp">*</span> : </td>
-		<td> <input type="text" name="lName"/> </td>
+		<td> Vendor Name : </td>
+		<td> <input type="text" name="vendName"/> </td>
 	</tr>
 	<tr >
 		<td > Address Line 1 : </td>
-		<td> <input type="textarea" rows="9" name="address1"/></td>
+		<td> <input type="textarea" rows="9" name="vendAddress1"/></td>
 	</tr>
 	<tr >
 		<td > Address Line 2 : </td>
-		<td> <input type="textarea" rows="9" name="address2"/></td>
+		<td> <input type="textarea" rows="9" name="vendAddress2"/></td>
 	</tr>
 	<tr >
 		<td > City : </td>
-		<td> <input type="textarea" rows="9" name="city"/></td>
+		<td> <input type="textarea" rows="9" name="vendCity"/></td>
 	</tr>
 	<tr>
 		<td> State  : </td>
-		<td> <input type="text" name="state"/> </td>
+		<td> <input type="text" name="vendState"/> </td>
 	</tr>
 	<tr>
 		<td> Pin Code : </td>
-		<td> <input type="text" name="pin"/> </td>
+		<td> <input type="text" name="vendPin"/> </td>
 	</tr>
 	<tr>
 		<td> Country : </td>
-		<td> <input type="text" name="country"/> </td>
+		<td> <input type="text" name="vendCountry"/> </td>
 	</tr>
 	<tr>
-		<td> Phone No : </td>
-		<td> <input type="text" name="phone"/> </td>
+		<td> Phone Number : </td>
+		<td> <input type="text" name="vendPhone"/> </td>
 	</tr>
 </table>
-<input type="checkbox"/> I have read and agreed to all the terms and conditions specified for signing up
-<br>
 <div class="button">
 		<input type="submit" name="btnSubmit" value="submit" onClick="Submit" >
 </div>

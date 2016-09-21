@@ -1,5 +1,3 @@
- <%@ page isELIgnored="false" %>
- <%@ taglib prefix ="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -16,8 +14,7 @@
   
       
        
- 
- <link rel="stylesheet" type="text/css" href="<c:url value="resources/css/contactUs.css"/>"  media ="screen"/>
+ <link rel="stylesheet" type="text/css" href="home.css"  media ="screen"/>
  
 
 
@@ -40,8 +37,7 @@
 <!--  Content section with the content: to be done -->
 <section class= "container">
  <div class = "content">
- <h2>Our Address:</h2>
- <div class="para">
+	<p> Our Address: </p>
 	<p> ReChord Breakers,   <br>
 			123 Warehouse Building, <br>
 			Frankenstein Street ,<br>
@@ -49,7 +45,6 @@
 			My State <br>
 			India			
 	</p>
-	</div>
 </div>
 </section>
 

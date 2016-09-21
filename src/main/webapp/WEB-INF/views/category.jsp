@@ -1,66 +1,57 @@
- <%@ page isELIgnored="false" %>
  <%@ taglib prefix ="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
+
 <head>
-<title>Contact Page</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Sign-up</title>
 
  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-      
-       
- 
- <link rel="stylesheet" type="text/css" href="<c:url value="resources/css/contactUs.css"/>"  media ="screen"/>
- 
 
-
+<link rel="stylesheet" type="text/css" href ="<c:url value="resources/css/prodDetails.css"/>" media ="screen"/>
 
 </head>
 
 
 <body>
-
-
 <!--  the header section -->
 <%@include file="header.jsp" %>
 
-
-
-
-
-
-
-<!--  Content section with the content: to be done -->
-<section class= "container">
- <div class = "content">
- <h2>Our Address:</h2>
- <div class="para">
-	<p> ReChord Breakers,   <br>
-			123 Warehouse Building, <br>
-			Frankenstein Street ,<br>
-			123456 New Town <br>
-			My State <br>
-			India			
-	</p>
-	</div>
+<!-- The category entry  form -->
+<div class="form">
+<p> Please enter the details of the category  you wish to add/update </p>
+<form name ="categoryDetails" action ="Login" method="post">
+<h2>Category Details</h2>
+<table class="proddata">
+	<tr>
+		<td> Category Id : </td>
+		<td> <input type="text" name="catId"/> </td>
+	</tr>
+	<tr>
+		<td> Category Name: </td>
+		<td> <input type="text" name="catName"/> </td>
+	</tr>
+	<tr>
+		<td> Description  : </td>
+		<td> <input type="text" name="catDesc"/> </td>
+	</tr>
+		
+</table>
+<div class="button">
+		<input type="submit" name="btnSubmit" value="submit" onClick="Submit" >
 </div>
-</section>
+</form>
+</div>
+
 
 
 <!--   the footer section -->
 <%@include file="footer.jsp" %>
-  
-  
 </body>
-
- 
-
-
 </html>

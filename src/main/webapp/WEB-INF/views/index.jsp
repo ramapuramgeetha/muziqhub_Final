@@ -27,7 +27,7 @@
 <body>
 
 <!--  the header section -->
-<%@include file="Header.jsp" %>
+<%@include file="header.jsp" %>
 
 
 <%@include file="carousel.jsp"%>
@@ -61,7 +61,7 @@
 </section>
 
 <!--  the footer section -->
-<%@include file="Footer.jsp" %>
+<%@include file="footer.jsp" %>
 
   
   

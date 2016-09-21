@@ -39,8 +39,8 @@
 				</div>
 				<!-- <p><a href ="Products"> Products </a></p>  -->
 				
-				<p> <a href ="About">About Us </a></p>
-				<p> <a href ="ContactUs">Contact Us </a></p>
+				<p> <a href ="about">About Us </a></p>
+				<p> <a href ="contactUs">Contact Us </a></p>
 				</nav>	
 				<navusr class ="col-sm-4">
 						<p><a href ="signUp"> Sign -Up </a></p>

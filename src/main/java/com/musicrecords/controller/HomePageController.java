@@ -21,17 +21,39 @@ public class HomePageController {
 	public String AboutPage() {
 		return "about";
 	}
-	@RequestMapping ("signIn")
+	
+	@RequestMapping ("/contactUs")
+	public String contactUs() {
+		return "contactUs";
+	}
+	
+	@RequestMapping ("/signIn")
 	public String LoginPage() {
 		return "signIn";
 	}
 	
-	@RequestMapping ("Products")
-	public String ProductsPage() {
-		return "Products";
-	}
-	@RequestMapping ("signUp")
+
+	@RequestMapping ("/signUp")
 	public String signUp() {
 		return "signUp";
+	}
+	
+	@RequestMapping ("/prodDisplay")
+	public String prodDisplay() {
+		return "prodDisplay";
+	}
+	@RequestMapping ("/productDetails")
+	public String productDetails() {
+		return "productDetails";
+	}
+	
+	@RequestMapping ("/category")
+	public String category() {
+		return "category";
+	}
+	
+	@RequestMapping ("/vendor")
+	public String vendor() {
+		return "vendor";
 	}
 }
