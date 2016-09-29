@@ -5,6 +5,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Role {
+	
 	@Id
 	private String userName;
 	private String userPassword;

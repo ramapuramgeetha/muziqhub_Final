@@ -1,130 +1,150 @@
 package com.musicrecords.model;
 
+import java.io.Serializable;
+
 import javax.persistence.*;
 
+import org.springframework.web.multipart.MultipartFile;
+
 	@Entity
-	public class Product {
+	public class Product implements Serializable {
 	
 	@GeneratedValue
 	int prodNo;
 	@Id
 	private String prodID;
 	private String prodName;
-	private String prodCategory;
+	@ManyToOne
+    @JoinColumn(name = "catId")
+	private Category  prodCategory;
 	private String prodDesc;
 	private String prodColor;
 	private String prodSize;
 	private String prUOM;
 	private long prodStock;
 	private int prodReorder;
-	private String vendorID;
+	@ManyToOne
+    @JoinColumn(name = "id")
+	private Vendor  vendorID;
 	private Double prodPrice;
-	private String imageMap;
 	private String prodStatus;
 	
-	public String getImageMap() {
-		return imageMap;
-	}
+@Transient
+private MultipartFile prodimage;
 
-	public void setImageMap(String imageMap) {
-		this.imageMap = imageMap;
-	}
+public int getProdNo() {
+	return prodNo;
+}
 
-	public String getProdStatus() {
-		return prodStatus;
-	}
+public void setProdNo(int prodNo) {
+	this.prodNo = prodNo;
+}
 
-	public void setProdStatus(String prodStatus) {
-		this.prodStatus = prodStatus;
-	}
-	   
 public String getProdID() {
-		return prodID;
-	}
+	return prodID;
+}
 
-	public void setProdID(int prodNo) {
-		this.prodID = "PR"+Integer.toString(prodNo);
-	}
+public void setProdID(String prodID) {
+	this.prodID = prodID;
+}
 
-	public String getProdName() {
-		return prodName;
-	}
+public String getProdName() {
+	return prodName;
+}
 
-	public void setProdName(String prodName) {
-		this.prodName = prodName;
-	}
+public void setProdName(String prodName) {
+	this.prodName = prodName;
+}
 
-	public String getProdCategory() {
-		return prodCategory;
-	}
+public Category getProdCategory() {
+	return prodCategory;
+}
 
-	public String getProdDesc() {
-		return prodDesc;
-	}
+public void setProdCategory(Category prodCategory) {
+	this.prodCategory = prodCategory;
+}
 
-	public void setProdDesc(String prodDesc) {
-		this.prodDesc = prodDesc;
-	}
+public String getProdDesc() {
+	return prodDesc;
+}
 
-	public String getProdColor() {
-		return prodColor;
-	}
+public void setProdDesc(String prodDesc) {
+	this.prodDesc = prodDesc;
+}
 
-	public void setProdColor(String prodColor) {
-		this.prodColor = prodColor;
-	}
+public String getProdColor() {
+	return prodColor;
+}
 
-	public String getProdSize() {
-		return prodSize;
-	}
+public void setProdColor(String prodColor) {
+	this.prodColor = prodColor;
+}
 
-	public void setProdSize(String prodSize) {
-		this.prodSize = prodSize;
-	}
+public String getProdSize() {
+	return prodSize;
+}
 
-	public String getPrUOM() {
-		return prUOM;
-	}
+public void setProdSize(String prodSize) {
+	this.prodSize = prodSize;
+}
 
-	public void setPrUOM(String prUOM) {
-		this.prUOM = prUOM;
-	}
+public String getPrUOM() {
+	return prUOM;
+}
 
-	public long getProdStock() {
-		return prodStock;
-	}
+public void setPrUOM(String prUOM) {
+	this.prUOM = prUOM;
+}
 
-	public void setProdStock(long prodStock) {
-		this.prodStock = prodStock;
-	}
+public long getProdStock() {
+	return prodStock;
+}
 
-	public int getProdReorder() {
-		return prodReorder;
-	}
+public void setProdStock(long prodStock) {
+	this.prodStock = prodStock;
+}
 
-	public void setProdReorder(int prodReorder) {
-		this.prodReorder = prodReorder;
-	}
+public int getProdReorder() {
+	return prodReorder;
+}
 
-	public String getVendorID() {
-		return vendorID;
-	}
+public void setProdReorder(int prodReorder) {
+	this.prodReorder = prodReorder;
+}
 
-	public void setVendorID(String vendorID) {
-		this.vendorID = vendorID;
-	}
+public Vendor getVendorID() {
+	return vendorID;
+}
 
-	public void setProdCategory(String prodCategory) {
-		this.prodCategory = prodCategory;
-	}
+public void setVendorID(Vendor vendorID) {
+	this.vendorID = vendorID;
+}
 
-	public Double getProdPrice() {
-		return prodPrice;
-	}
+public Double getProdPrice() {
+	return prodPrice;
+}
 
-	public void setProdPrice(Double prodPrice) {
-		this.prodPrice = prodPrice;
-	}
+public void setProdPrice(Double prodPrice) {
+	this.prodPrice = prodPrice;
+}
+
+public String getProdStatus() {
+	return prodStatus;
+}
+
+public void setProdStatus(String prodStatus) {
+	this.prodStatus = prodStatus;
+}
+
+public MultipartFile getProdimage() {
+	return prodimage;
+}
+
+public void setProdimage(MultipartFile prodimage) {
+	this.prodimage = prodimage;
+}
+
+	
 	}
 
 

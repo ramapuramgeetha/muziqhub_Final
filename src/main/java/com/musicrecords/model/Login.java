@@ -1,10 +1,12 @@
 package com.musicrecords.model;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Login {
 	
+	@Id
 	private LoginPK logId;
 	private String usrPasswod;
 	private String usrStatus;

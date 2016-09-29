@@ -2,6 +2,8 @@ package com.musicrecords.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class CreditCard {
@@ -12,7 +14,9 @@ private String  usrId;
 private String  crCdType;
 private int  crCdExpMonth;
 private int  crCdExpYear;
-private String  crCdUserName;
+@ManyToOne
+@JoinColumn(name="id")
+private User  crCdUserName;
 private String Status;
 
 	public CreditCard() {
@@ -25,6 +29,14 @@ private String Status;
 
 	public void setCrCdNo(long crCdNo) {
 		this.crCdNo = crCdNo;
+	}
+
+	public String getUsrId() {
+		return usrId;
+	}
+
+	public void setUsrId(String usrId) {
+		this.usrId = usrId;
 	}
 
 	public String getCrCdType() {
@@ -51,11 +63,11 @@ private String Status;
 		this.crCdExpYear = crCdExpYear;
 	}
 
-	public String getCrCdUserName() {
+	public User getCrCdUserName() {
 		return crCdUserName;
 	}
 
-	public void setCrCdUserName(String crCdUserName) {
+	public void setCrCdUserName(User crCdUserName) {
 		this.crCdUserName = crCdUserName;
 	}
 
@@ -67,12 +79,6 @@ private String Status;
 		Status = status;
 	}
 
-	public String getUsrId() {
-		return usrId;
-	}
-
-	public void setUsrId(String usrId) {
-		this.usrId = usrId;
-	}
+	
 
 }

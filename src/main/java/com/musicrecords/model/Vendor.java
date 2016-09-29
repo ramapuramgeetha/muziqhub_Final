@@ -1,8 +1,13 @@
 package com.musicrecords.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Vendor {
@@ -17,20 +22,23 @@ private String vendPh;
 private String vendEmail;
 private String vendStatus;
 
-	public String getVendStatus() {
-	return vendStatus;
+@OneToMany(mappedBy = "vendorID", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+private List<Product> product;
+
+public int getId() {
+	return id;
 }
 
-public void setVendStatus(String vendStatus) {
-	this.vendStatus = vendStatus;
+public void setId(int id) {
+	this.id = id;
 }
 
-	public String getVendorId() {
+public String getVendorId() {
 	return vendorId;
 }
 
-public void setVendorId(int id) {
-	this.vendorId = "VEN"+Integer.toString(id);
+public void setVendorId(String vendorId) {
+	this.vendorId = vendorId;
 }
 
 public String getVendName() {
@@ -65,8 +73,22 @@ public void setVendEmail(String vendEmail) {
 	this.vendEmail = vendEmail;
 }
 
-	public Vendor() {
-		// TODO Auto-generated constructor stub
-	}
+public String getVendStatus() {
+	return vendStatus;
+}
+
+public void setVendStatus(String vendStatus) {
+	this.vendStatus = vendStatus;
+}
+
+public List<Product> getProduct() {
+	return product;
+}
+
+public void setProduct(List<Product> product) {
+	this.product = product;
+}
+
+	
 
 }
