@@ -1,15 +1,10 @@
 package com.musicrecords.model;
 
 import java.io.Serializable;
-
+import java.util.List;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-
+import javax.persistence.*;
 
 @Entity
 public class Category implements Serializable {
@@ -19,7 +14,7 @@ public class Category implements Serializable {
 	private String catName;
 	private String catDesc;
 
-	@OneToMany(mappedBy="prodCategory", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@OneToMany( cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private Set<Product> product;
 	
 	private String catStatus;

@@ -1,14 +1,6 @@
 package com.musicrecords.model;
 
-
-
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
 import org.springframework.web.multipart.MultipartFile;
 
@@ -19,7 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 	private String prodID;
 	private String prodName;
 	
-	@ManyToOne(cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+	@ManyToOne
     @JoinColumn(name = "catId")
 	private Category  prodCategory;
 	
@@ -30,11 +22,9 @@ import org.springframework.web.multipart.MultipartFile;
 	private long prodStock;
 	private int prodReorder;
 	
-	/*
 	@ManyToOne
     @JoinColumn(name = "vendorId")
 	private Vendor  vendorID;
-	*/
 	
 	private Double prodPrice;
 	private String prodStatus;
@@ -115,7 +105,6 @@ public void setProdReorder(int prodReorder) {
 	this.prodReorder = prodReorder;
 }
 
-/*
 public Vendor getVendorID() {
 	return vendorID;
 }
@@ -123,7 +112,7 @@ public Vendor getVendorID() {
 public void setVendorID(Vendor vendorID) {
 	this.vendorID = vendorID;
 }
-*/
+
 public Double getProdPrice() {
 	return prodPrice;
 }
