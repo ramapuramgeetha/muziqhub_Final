@@ -23,7 +23,15 @@ private String usrName;
 private String usrBillAdd;
 private String usrShipAdd;
 private String usrPhone;
-private String usremail;
+private String usrEmail;
+
+public String getUsrEmail() {
+	return usrEmail;
+}
+
+public void setUsrEmail(String usrEmail) {
+	this.usrEmail = usrEmail;
+}
 
 @OneToMany (cascade=CascadeType.ALL)
 @JoinColumn (name="crCdNo")
@@ -75,11 +83,11 @@ public void setUsrPhone(String usrPhone) {
 }
 
 public String getUsremail() {
-	return usremail;
+	return usrEmail;
 }
 
 public void setUsremail(String usremail) {
-	this.usremail = usremail;
+	this.usrEmail = usremail;
 }
 
 
