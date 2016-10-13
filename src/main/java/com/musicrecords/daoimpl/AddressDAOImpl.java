@@ -21,6 +21,9 @@ public class AddressDAOImpl implements AddressDAO{
 	@Autowired
 	private SessionFactory sessionFactory;
 	
+	public AddressDAOImpl() {
+	
+	}
 	public AddressDAOImpl(SessionFactory sessionFactory) {
 		this.sessionFactory =sessionFactory;
 	}

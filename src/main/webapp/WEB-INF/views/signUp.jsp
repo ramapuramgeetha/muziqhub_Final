@@ -30,18 +30,18 @@
 			<p> Thanks for deciding to Sign-up with Muziq Hub. 
 				We need a few details to make your experience with us a pleasant one</p>
 				<h2>Your Details</h2>
-			<table class="userdata">
+			<table >
 				<tr>
 						<td> User Name <span id="imp">*</span> : </td>
 						<td> <form:input  path="uname"/> </td>
 				</tr>
 				<tr>
 						<td> Password <span id="imp">*</span> : </td>
-						<td> <form:passwordt  path="usrPasswod"/> </td>
+						<td> <form:password  path="usrPasswod"/> </td>
 				</tr>
 				<tr>
 						<td> Confirm Password <span id="imp">*</span> : </td>
-						<td> <form:passwordt  path="cfrmPass"/> </td>
+						<td> <form:password  path="cfrmPass"/> </td>
 				</tr>
 				<tr>
 						<td> Name <span id="imp">*</span> : </td>

@@ -20,17 +20,29 @@ public class SignUpController {
 
 	@Autowired
 	private UserService userDao;
-	private AddressService addressDao;
-	private LoginService loginDao;
+
 	
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public ModelAndView saveUser(@ModelAttribute User user, 
     		@ModelAttribute Address add, 
     		@ModelAttribute Login login) 
     {
-    	userDao.saveOrUpdate(user);
-    	addressDao.saveOrUpdate(add);
-    	loginDao.saveOrUpdate(login);
+    	User saveUser=new User();
+    	saveUser.setUsrId("stn01");
+    	saveUser.setUsrName("Nick Klaus");
+    	saveUser.setUsrEmail("nick.claus@gmail.com");
+    	saveUser.setUsrBillAdd("stn01B");
+    	saveUser.setUsrShipAdd("stn01S");
+    	saveUser.setUsrPhone("0987654321");
+    	//saveUser.setUsrCreditCard(0123-4567-8901-1111);
+    	saveUser.setUsrStatus("C");
+    	
+    	;
+    	
+    	
+    	userDao.saveOrUpdate(saveUser);
+    	//addressDao.saveOrUpdate(add);
+    	//loginDao.saveOrUpdate(login);
     	       
         return new ModelAndView("redirect:/");
     }
