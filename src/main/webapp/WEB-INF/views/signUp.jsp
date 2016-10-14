@@ -26,7 +26,7 @@
 
 <!-- The registration form -->
 <div>
-<form:form method="post" action="save" modelAttribute="userdata">
+<form:form method="POST" action="save" commandName="userForm">
 			<p> Thanks for deciding to Sign-up with Muziq Hub. 
 				We need a few details to make your experience with us a pleasant one</p>
 				<h2>Your Details</h2>
