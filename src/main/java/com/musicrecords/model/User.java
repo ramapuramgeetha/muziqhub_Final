@@ -33,9 +33,11 @@ public void setUsrEmail(String usrEmail) {
 	this.usrEmail = usrEmail;
 }
 
+/*
 @OneToMany (cascade=CascadeType.ALL)
 @JoinColumn (name="crCdNo")
 private Set<CreditCard> usrCreditCard ;
+*/
 
 private String usrStatus;
 
@@ -92,13 +94,7 @@ public void setUsremail(String usremail) {
 
 
 
-public Set<CreditCard> getUsrCreditCard() {
-	return usrCreditCard;
-}
 
-public void setUsrCreditCard(Set<CreditCard> usrCreditCard) {
-	this.usrCreditCard = usrCreditCard;
-}
 
 public String getUsrStatus() {
 	return usrStatus;

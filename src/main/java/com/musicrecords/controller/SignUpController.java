@@ -3,6 +3,8 @@ package com.musicrecords.controller;
 
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,46 +29,43 @@ public class SignUpController {
 	@Autowired
 	private UserService userDao;
 
-	@RequestMapping(value = "/save")
-	public class RegisterController {
+
 	 
-	    @RequestMapping(method = RequestMethod.GET)
+	    @RequestMapping(value="/signUp", method = RequestMethod.GET)
 	    public String viewUser() {
 	        //UserData userForm = new UserData();    
 	        //model.put("userForm", userForm);
 	         return "signUp";
 	    }
-	     
-	    @RequestMapping(method = RequestMethod.POST)
-	    public String processRegistration(@ModelAttribute("userForm") UserData userdata,
-	            Map<String, Object> model) {
-	         
+	     @ModelAttribute("userForm")
+	     public UserData newuserdata()
+	     {
+	    	 return new UserData();
+	     }
+	    @RequestMapping(value="save", method = RequestMethod.POST)
+	    public String processRegistration(@Valid @ModelAttribute("userForm") UserData userdata,Model  model,BindingResult result) {
+	    	if(result.hasErrors()){
+	    		return "signUp";
+	    	}
 	    	User saveUser=new User();
-	    	saveUser.setUsrId(userdata.getUname());
+	    	saveUser.setUsrId(userdata.getUId());
 	    	saveUser.setUsrName(userdata.getName());
 	    	saveUser.setUsrEmail(userdata.getEmail());
 	    	saveUser.setUsrBillAdd("stn01B");
 	    	saveUser.setUsrShipAdd("stn01S");
-	    	saveUser.setUsrPhone(userdata.getPhone());
-	    	//saveUser.setUsrCreditCard(0123-4567-8901-1111);
-	    	saveUser.setUsrStatus("C");
-	    	
-	    	;
-	    	
-	    	
+	    	saveUser.setUsrStatus("C"); 	
+	    	//saveUser.setUsrCreditCard(usrCreditCard);
 	    	userDao.saveOrUpdate(saveUser);
-	    	//addressDao.saveOrUpdate(add);
-	    	//loginDao.saveOrUpdate(login);
 	         
 	        // for testing purpose:
 	        System.out.println("username: " + userdata.getName());
-	        System.out.println("id: " + userdata.getUname());
+	        System.out.println("id: " + userdata.getUId());
 	        System.out.println("email: " + userdata.getEmail());
 
 	         
 	        return "signIn";
 	    }
-	}
+	
 	
 	/*
     @RequestMapping(value = "/save", method = RequestMethod.POST)
@@ -100,8 +99,5 @@ public class SignUpController {
         return model;
     }
     */
-    	public SignUpController() {
-		// TODO Auto-generated constructor stub
-	}
-
+    	
 }

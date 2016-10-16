@@ -48,15 +48,6 @@
 				<td> Password  : </td>
 				<td> <input type="password" name="passWrd"/> </td>
 			</tr>
-			<tr>
-				<td><a href ="productDetails">Product details</a></td>
-			</tr>
-			<tr>
-				<td><a href ="category">Category details</a></td>
-			</tr>
-						<tr>
-				<td><a href ="vendor">vendor details</a></td>
-			</tr>
 			</table>
 
 			<div class="button">

@@ -14,7 +14,6 @@ private long crCdNo;
 @ManyToOne (cascade=CascadeType.ALL)
 private User  user;
 
-private String  crCdType;
 private int  crCdExpMonth;
 private int  crCdExpYear;
 private String  crCdUserName;
@@ -34,13 +33,7 @@ private String Status;
 
 	
 
-	public String getCrCdType() {
-		return crCdType;
-	}
 
-	public void setCrCdType(String crCdType) {
-		this.crCdType = crCdType;
-	}
 
 	public int getCrCdExpMonth() {
 		return crCdExpMonth;

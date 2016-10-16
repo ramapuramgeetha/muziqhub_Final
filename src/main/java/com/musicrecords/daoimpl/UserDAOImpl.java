@@ -18,9 +18,7 @@ public class UserDAOImpl implements UserDAO{
 	@Autowired
 	private SessionFactory sessionFactory;
 	
-	public UserDAOImpl() {
-		// TODO Auto-generated constructor stub
-	}
+
 
 	@Override
 	@Transactional
@@ -52,7 +50,8 @@ public class UserDAOImpl implements UserDAO{
 	@Override
 	@Transactional
 	public void saveOrUpdate(User user) {
-		sessionFactory.getCurrentSession().saveOrUpdate(user);
+		System.out.println("userid=" + user.getUsrId());
+		sessionFactory.openSession().saveOrUpdate(user);
 		
 		
 	}

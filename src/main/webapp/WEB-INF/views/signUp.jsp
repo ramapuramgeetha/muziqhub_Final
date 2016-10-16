@@ -33,11 +33,11 @@
 			<table >
 				<tr>
 						<td> User Name <span id="imp">*</span> : </td>
-						<td> <form:input  path="uname"/> </td>
+						<td> <form:input  path="UId"/> </td>
 				</tr>
 				<tr>
 						<td> Password <span id="imp">*</span> : </td>
-						<td> <form:password  path="usrPasswod"/> </td>
+						<td> <form:password  path="password"/> </td>
 				</tr>
 				<tr>
 						<td> Confirm Password <span id="imp">*</span> : </td>
@@ -45,19 +45,30 @@
 				</tr>
 				<tr>
 						<td> Name <span id="imp">*</span> : </td>
-						<td> <form:input  path="usrName"/> </td>
+						<td> <form:input  path="name"/> </td>
 				</tr>
 				<tr>
 						<td> e-mail <span id="imp">*</span> : </td>
-						<td> <form:input  path="usrEmail"/> </td>
+						<td> <form:input  path="email"/> </td>
 				</tr>
 				<tr >
-						<td > Address Line 1 : </td>
-						<td> <form:input  path="address1"/></td>
+						<td > Billing Address Line 1 : </td>
+						<td> <form:input  path="Baddress1"/></td>
 				</tr>
 				<tr >
-						<td > Address Line 2 : </td>
-						<td> <form:input  path="address2"/></td>
+						<td > Billing Address Line 2 : </td>
+						<td> <form:input  path="Baddress2"/></td>
+				</tr>
+				<tr>
+							<td>Billing address is same as shipping address  <form:checkbox path="BillandShip"/></td> 
+				</tr>
+				<tr >
+						<td > Shipping Address Line 1 : </td>
+						<td> <form:input  path="Saddress1"/></td>
+				</tr>
+				<tr >
+						<td > Shipping Address Line 2 : </td>
+						<td> <form:input  path="Saddress2"/></td>
 				</tr>
 				<tr >
 						<td > City : </td>
@@ -80,6 +91,7 @@
 						<td> <form:input  path="phone"/> </td>
 				</tr>
 		</table>
+		
 		<form:checkbox path="TandC"/> I have read and agreed to all the terms and conditions specified for signing up
 		<br>
 		<div class="button">
